@@ -2,18 +2,18 @@
 
 namespace App\Models;
 
-use App\Models\Region;
+use App\Models\Pharmacy;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Pharmacy extends Model
+class Region extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
 
-    public function region()
+    public function pharmacy()
     {
-        return $this->belongsToMany(Region::class);
+        return $this->belongsTo(Pharmacy::class);
     }
 }
