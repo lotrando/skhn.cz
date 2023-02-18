@@ -1,5 +1,4 @@
 @extends('layout.app')
 
-@section('content')
-    <h1>Index</h1>
-@endsection
+@include('include.hero')
+@include('include.main')

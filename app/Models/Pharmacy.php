@@ -38,6 +38,6 @@ class Pharmacy extends Model
 
     public function region()
     {
-        return $this->belongsToMany(Region::class);
+        return $this->belongsTo(Region::class);
     }
 }

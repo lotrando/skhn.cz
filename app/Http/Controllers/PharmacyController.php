@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pharmacy;
+use App\Models\Region;
 use Illuminate\Http\Request;
 
 class PharmacyController extends Controller
@@ -44,9 +45,13 @@ class PharmacyController extends Controller
      * @param  \App\Models\Pharmacy  $pharmacy
      * @return \Illuminate\Http\Response
      */
-    public function show(Pharmacy $pharmacy)
+    public function show($id)
     {
-        //
+        $regions = Region::with('pharmacy')->get();
+        $reg = Region::whereId($id)->pluck('region_name');
+        $pharmacies = Pharmacy::with('region')->where('region_id', $id)->get();
+
+        return view('pharmacy.index', ['reg' => $reg, 'regions' => $regions, 'pharmacies' => $pharmacies]);
     }
 
     /**

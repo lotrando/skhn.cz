@@ -31,6 +31,6 @@ class Region extends Model
 
     public function pharmacy()
     {
-        return $this->belongsTo(Pharmacy::class);
+        return $this->hasMany(Pharmacy::class);
     }
 }

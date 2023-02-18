@@ -15,11 +15,13 @@ class CreatePharmaciesTable extends Migration
     {
         Schema::create('pharmacies', function (Blueprint $table) {
             $table->id();
-            $table->string('region_id');
-            $table->string('code');
-            $table->string('name');
-            $table->string('address');
-            $table->string('number');
+            $table->string('region_id')->nullable();
+            $table->string('uid')->nullable();
+            $table->string('ic')->nullable();
+            $table->string('name')->nullable();
+            $table->string('address')->nullable();
+            $table->string('village')->nullable();
+            $table->string('code')->nullable();
         });
     }
 

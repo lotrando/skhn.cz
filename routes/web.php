@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PharmacyController;
+use App\Models\Pharmacy;
+use App\Models\Region;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-});
+    $regions = Region::with('pharmacy')->get();
+    $pharmacies = Pharmacy::with('region')->get();
 
-Route::get('/login' , function () {
-    return view('index');
-})->name('login');
+    // return $regions;
 
-Route::get('/register' , function () {
-    return view('index');
-})->name('register');
+    return view('index', ['regions' => $regions, 'pharmacies' => $pharmacies]);
+})->name('index');
+
+Route::resource('pharmacy', PharmacyController::class);
