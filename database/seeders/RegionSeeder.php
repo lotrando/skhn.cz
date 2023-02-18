@@ -83,7 +83,7 @@ class RegionSeeder extends Seeder
         DB::table('regions')->insert([
             'region_csu'    => "OLK",
             'region_name'   => "Olomoucký kraj",
-            'region_city'   => "Brno",
+            'region_city'   => "Olomouc",
         ]);
 
         DB::table('regions')->insert([
@@ -95,7 +95,7 @@ class RegionSeeder extends Seeder
         DB::table('regions')->insert([
             'region_csu'    => "ZLK",
             'region_name'   => "Zlínský kraj",
-            'region_city'   => "Ostrava",
+            'region_city'   => "Zlín",
         ]);
     }
 }
