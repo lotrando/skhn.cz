@@ -27,6 +27,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereRegionId($value)
  * @property-read \Illuminate\Database\Eloquent\Collection<int, Region> $region
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, Region> $region
  * @mixin \Eloquent
  */
 class Pharmacy extends Model
