@@ -21,6 +21,7 @@ class CreatePharmaciesTable extends Migration
             $table->string('name')->nullable();
             $table->string('address')->nullable();
             $table->string('village')->nullable();
+            $table->string('zip')->nullable();
             $table->string('code')->nullable();
         });
     }

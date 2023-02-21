@@ -31,18 +31,47 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereRegionId($value)
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Region> $region
- * @property-read \Illuminate\Database\Eloquent\Collection<int, Region> $region
  * @mixin \Eloquent
- * @property float|null $uid
- * @property float|null $ic
+ * @property string|null $uid
+ * @property string|null $ic
  * @property string|null $village
+ * @property string|null $zip
  * @property-read \App\Models\Region|null $region
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereIc($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereUid($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereVillage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereZip($value)
  */
 	class Pharmacy extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * App\Models\Post
+ *
+ * @property int $id
+ * @property string $name
+ * @property string $email
+ * @property string $phone
+ * @property string $uid
+ * @property string $region_id
+ * @property string $message
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Post query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereMessage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post wherePhone($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereRegionId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereUid($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Post whereUpdatedAt($value)
+ */
+	class Post extends \Eloquent {}
 }
 
 namespace App\Models{

@@ -10,7 +10,7 @@
                 <h3 class="text-center">Proč se stát členem Sdružení Karvinské hornické nemocnice?</h3>
                 <p class="text-center">
                   Bojíte se, že neudržíte otěže své lékárny pevně ve svých rukou. Přidejte se k nám a své obavy hoďte klidně za hlavu!
-                  </p>
+                </p>
                 <p class="text-center">
                   Garantujeme vám zachování ekonomické a marketingové individuality vaší lékárny, protože ve vás věříme. Nabízíme vám výhodný program, který přispěje k
                   uspokojivému ekonomickému efektu v alianci.
@@ -97,41 +97,45 @@
             <p>Zadejte údaje o vaší lékárně. My se s vámi co nejdříve spojíme.</p>
           </div>
 
-          <div class="validate"></div>
-          <form class="php-email-form" role="form" action="" method="post">
+          <div class="validate">
+            @if (count($errors) > 0)
+              <div class="error">
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+              </div>
+            @endif
+          </div>
+
+          <form class="php-email-form" role="form" action="{{ route('post.store') }}" method="POST">
+            @csrf
             <div class="row">
               <div class="col-md-4 form-group">
-                <input class="form-control" id="name" name="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" type="text" placeholder="Vaše jméno">
+                <input class="form-control" id="name" name="name" type="text" value="{{ old('name') }}" placeholder="Název lékárny">
                 <div class="validate"></div>
               </div>
               <div class="col-md-4 form-group mt-md-0 mt-3">
-                <input class="form-control" id="email" name="email" data-rule="email" data-msg="Please enter a valid email" type="email" placeholder="Vaše emailová adreaa">
+                <input class="form-control" id="email" name="email" type="email" value="{{ old('email') }}" placeholder="Emailová adresa">
                 <div class="validate"></div>
               </div>
               <div class="col-md-4 form-group mt-md-0 mt-3">
-                <input class="form-control" id="phone" name="phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars" type="tel"
-                       placeholder="Telefonní kontakt">
+                <input class="form-control" id="phone" name="phone" value="{{ old('phone') }}" placeholder="Telefonní kontakt">
                 <div class="validate"></div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 form-group mt-3">
-                <input class="form-control datepicker" id="date" name="date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" placeholder="Datum">
+                <input class="form-control" id="uid" name="uid" value="{{ old('uid') }}" placeholder="Kód vaší lékárny">
                 <div class="validate"></div>
               </div>
-              <div class="col-md-4 form-group mt-3">
-                <select class="form-select" id="kraj" name="kraj">
+              <div class="col-md-8 form-group mt-3">
+                <select class="form-select" id="region_id" name="region_id" value="{{ old('phone') }}">
                   <option value="">Vyberte kraj</option>
                   @foreach ($regions as $region)
                     <option value="{{ $region->id }}">{{ $region->region_name }}</option>
                   @endforeach
-                </select>
-              </div>
-              <div class="col-md-4 form-group mt-3">
-                <select class="form-select" id="type" name="type">
-                  <option value=""></option>
-                  <option value="Firma">Firma</option>
-                  <option value="Zákazník">Zákazník</option>
                 </select>
               </div>
             </div>
@@ -140,7 +144,12 @@
               <textarea class="form-control" name="message" rows="6" placeholder="Text zprávy"></textarea>
               <div class="validate"></div>
             </div>
-            <div class="mt-3 text-center"><button type="submit">Odeslat</button></div>
+
+            <div class="mt-3 text-center">
+              <button type="submit">
+                Odeslat
+              </button>
+            </div>
           </form>
 
         </div>
@@ -203,11 +212,12 @@
                     <li data-aos="fade-up">
                       <a data-bs-toggle="collapse" data-bs-target="#faq-list-{{ $region->id }}">{{ $region->region_name }}
                         <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                      <div class="collapse mt-3" id="faq-list-{{ $region->id }}" data-bs-parent=".faq-list">
+                      <div class="collapse mt-1" id="faq-list-{{ $region->id }}" data-bs-parent=".faq-list">
                         <ul>
                           @foreach ($region->pharmacy as $pharmacy)
                             <li>
-                              <span class="text-uppercase text-primary">Lékárna - {{ $pharmacy->name }}</span> - {{ $pharmacy->address }}, {{ $pharmacy->village }}
+                              <span class="text-bolder">{{ $pharmacy->name }}</span> - <span class="text-muted">{{ $pharmacy->address }}, {{ $pharmacy->zip }},
+                                {{ $pharmacy->village }}</span>
                             </li>
                           @endforeach
                         </ul>
@@ -325,7 +335,7 @@
 
             <div class="col-lg-8 mt-lg-0 mt-5">
 
-              <form class="php-email-form" role="form" action="" method="post">
+              {{-- <form class="php-email-form" role="form" action="" method="post">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input class="form-control" id="name" name="name" type="text" placeholder="Vaše jméno" required>
@@ -346,7 +356,7 @@
                   <div class="sent-message">Vaše zpráva byla uložena. Děkujeme!</div>
                 </div>
                 <div class="text-center"><button type="submit">Odeslat vzkaz</button></div>
-              </form>
+              </form> --}}
 
             </div>
 

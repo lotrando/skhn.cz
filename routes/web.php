@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PharmacyController;
+use App\Http\Controllers\PostController;
 use App\Models\Pharmacy;
 use App\Models\Region;
 use Illuminate\Support\Facades\Route;
@@ -20,9 +21,8 @@ Route::get('/', function () {
     $regions = Region::with('pharmacy')->get();
     $pharmacies = Pharmacy::with('region')->get();
 
-    // return $regions;
-
     return view('index', ['regions' => $regions, 'pharmacies' => $pharmacies]);
 })->name('index');
 
+Route::resource('post', PostController::class);
 Route::resource('pharmacy', PharmacyController::class);

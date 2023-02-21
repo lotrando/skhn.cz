@@ -17,13 +17,7 @@
               <ul>
                 @foreach ($pharmacies as $pharmacy)
                   <li data-aos="fade-up">
-                    <a data-bs-toggle="collapse" data-bs-target="#faq-list-{{ $pharmacy->id }}">{{ $pharmacy->name }}
-                      <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                    <div class="collapse mt-3" id="faq-list-{{ $pharmacy->id }}" data-bs-parent=".faq-list">
-                      <p>
-                        <span class="text-uppercase text-primary">{{ $pharmacy->address }}</span> - {{ $pharmacy->village }}
-                      </p>
-                    </div>
+                    {{ $pharmacy->name }} - {{ $pharmacy->address }}</span> - {{ $pharmacy->village }}
                   </li>
                 @endforeach
               </ul>
