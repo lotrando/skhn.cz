@@ -66,7 +66,7 @@
 
           <div class="row">
 
-            <div class="col-lg-6 col-md-6 mt-md-0 mt-5">
+            <div class="col-lg-12 col-md-12 mt-md-0 mt-5">
               <div class="count-box">
                 <i class="fas fa-hospital"></i>
                 <span class="purecounter" data-purecounter-start="0" data-purecounter-end="{{ $pharmacies->count() }}" data-purecounter-duration="1"></span>
@@ -74,13 +74,13 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 mt-lg-0 mt-5">
+            {{-- <div class="col-lg-6 col-md-6 mt-lg-0 mt-5">
               <div class="count-box">
                 <i class="fas fa-users"></i>
                 <span class="purecounter" data-purecounter-start="0" data-purecounter-end="{{ $regions->count() }}" data-purecounter-duration="1"></span>
                 <p>Kraje</p>
               </div>
-            </div>
+            </div> --}}
 
           </div>
 
@@ -212,13 +212,16 @@
                     <li data-aos="fade-up">
                       <a data-bs-toggle="collapse" data-bs-target="#faq-list-{{ $region->id }}">{{ $region->region_name }}
                         <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                      <div class="collapse mt-1" id="faq-list-{{ $region->id }}" data-bs-parent=".faq-list">
+                      <div class="collapse mt-1 px-2" id="faq-list-{{ $region->id }}" data-bs-parent=".faq-list">
                         <ul>
                           @foreach ($region->pharmacy as $pharmacy)
-                            <li>
-                              <span class="text-bolder">{{ $pharmacy->name }}</span> - <span class="text-muted">{{ $pharmacy->address }}, {{ $pharmacy->zip }},
-                                {{ $pharmacy->village }}</span>
-                            </li>
+                            <hr>
+                            <p>
+                              <span class="text-bolder">{{ $pharmacy->name }}</span>
+                            </p>
+                            <p>
+                              <span class="text-muted">{{ $pharmacy->address }}, {{ $pharmacy->zip }}, {{ $pharmacy->village }}</span>
+                            </p>
                           @endforeach
                         </ul>
                       </div>

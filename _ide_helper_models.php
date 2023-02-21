@@ -32,15 +32,13 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereNumber($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereRegionId($value)
  * @mixin \Eloquent
- * @property string|null $uid
- * @property string|null $ic
+ * @property float|null $uid
+ * @property float|null $ic
  * @property string|null $village
- * @property string|null $zip
  * @property-read \App\Models\Region|null $region
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereIc($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereUid($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereVillage($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Pharmacy whereZip($value)
  */
 	class Pharmacy extends \Eloquent {}
 }
@@ -58,6 +56,7 @@ namespace App\Models{
  * @property string $message
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\Region|null $region
  * @method static \Illuminate\Database\Eloquent\Builder|Post newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Post query()

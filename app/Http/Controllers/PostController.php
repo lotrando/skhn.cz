@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PharmacyMail;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
@@ -38,16 +40,29 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $validData = Validator::make($request->all(), [
-            'name'      => 'required|unique:posts|max:255',
-            'email'     => 'required',
-            'phone'     => 'required',
-            'uid'       => 'required',
-            'region_id' => 'required',
-            'message'   => 'required'
+            'name'          => 'required|unique:posts|max:255',
+            'email'         => 'required',
+            'phone'         => 'required',
+            'uid'           => 'required|unique:posts',
+            'region_id'     => 'required',
+            'message'       => 'required'
         ])->validate();
 
         Post::create($validData);
-        Session::flash('message', 'Successfully Registered!');
+
+        $reservation = Post::with('region')->latest()->first();
+
+        $data = [
+            'name'          => $reservation->name,
+            'email'         => $reservation->email,
+            'phone'         => $reservation->phone,
+            'uid'           => $reservation->uid,
+            'region'        => $reservation->region->region_name,
+            'message'       => $reservation->message,
+        ];
+
+        Mail::to('reznikova@khn.cz')->send(new PharmacyMail($data));
+
         return redirect()->back()->withErrors($request->all());
     }
 
