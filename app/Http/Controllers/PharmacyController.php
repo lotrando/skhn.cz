@@ -49,7 +49,7 @@ class PharmacyController extends Controller
     {
         $regions = Region::with('pharmacy')->get();
         $reg = Region::whereId($id)->pluck('region_name');
-        $pharmacies = Pharmacy::with('region')->where('region_id', $id)->get();
+        $pharmacies = Pharmacy::with('region')->where('region_id', $id)->orderBy('name')->get();
 
         return view('pharmacy.index', ['reg' => $reg, 'regions' => $regions, 'pharmacies' => $pharmacies]);
     }

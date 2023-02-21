@@ -10,7 +10,7 @@
                 <h3 class="text-center">Proč se stát členem Sdružení Karvinské hornické nemocnice?</h3>
                 <p class="text-center">
                   Bojíte se, že neudržíte otěže své lékárny pevně ve svých rukou. Přidejte se k nám a své obavy hoďte klidně za hlavu!
-                  </h4>
+                  </p>
                 <p class="text-center">
                   Garantujeme vám zachování ekonomické a marketingové individuality vaší lékárny, protože ve vás věříme. Nabízíme vám výhodný program, který přispěje k
                   uspokojivému ekonomickému efektu v alianci.
@@ -98,7 +98,7 @@
           </div>
 
           <div class="validate"></div>
-          <form class="php-email-form" role="form" action="forms/appointment.php" method="post">
+          <form class="php-email-form" role="form" action="" method="post">
             <div class="row">
               <div class="col-md-4 form-group">
                 <input class="form-control" id="name" name="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" type="text" placeholder="Vaše jméno">
@@ -116,8 +116,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 form-group mt-3">
-                <input class="form-control datepicker" id="date" name="date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" type="datetime"
-                       placeholder="Datum">
+                <input class="form-control datepicker" id="date" name="date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" placeholder="Datum">
                 <div class="validate"></div>
               </div>
               <div class="col-md-4 form-group mt-3">
@@ -129,7 +128,7 @@
                 </select>
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select class="form-select" id="type" name="type" placeholder="Typ">
+                <select class="form-select" id="type" name="type">
                   <option value=""></option>
                   <option value="Firma">Firma</option>
                   <option value="Zákazník">Zákazník</option>
@@ -219,6 +218,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
       {{-- End Departments Section --}}
 
@@ -325,7 +325,7 @@
 
             <div class="col-lg-8 mt-lg-0 mt-5">
 
-              <form class="php-email-form" role="form" action="forms/contact.php" method="post">
+              <form class="php-email-form" role="form" action="" method="post">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input class="form-control" id="name" name="name" type="text" placeholder="Vaše jméno" required>
