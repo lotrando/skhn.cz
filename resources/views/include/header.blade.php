@@ -10,8 +10,8 @@
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#">Úvod</a></li>
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#why-us">O nás</a></li>
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#services">Nabízíme</a></li>
-        <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#appointment">Pro zájemce</a></li>
-        <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#marketing">Marketing</a></li>
+        <li><a class="nav-link scrollto text-uppercase" href="{{ route('interest') }}">Pro zájemce</a></li>
+        <li><a class="nav-link scrollto text-uppercase" href="{{ route('marketing') }}">Marketing</a></li>
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#contact">Kontakt</a></li>
         <li class="dropdown text-uppercase"><a href="#"><span>Lékárny</span> <i class="bi bi-chevron-down"></i></a>
           <ul>

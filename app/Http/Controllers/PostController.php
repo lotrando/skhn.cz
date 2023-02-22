@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\PharmacyMail;
+use App\Mail\UserPharmacyMail;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -45,7 +46,7 @@ class PostController extends Controller
             'phone'         => 'required',
             'uid'           => 'required|unique:posts',
             'region_id'     => 'required',
-            'message'       => 'required'
+            'message'       => 'nullable'
         ])->validate();
 
         Post::create($validData);
@@ -62,6 +63,8 @@ class PostController extends Controller
         ];
 
         Mail::to('reznikova@khn.cz')->send(new PharmacyMail($data));
+
+        Mail::to($reservation->email)->send(new UserPharmacyMail($data));
 
         return redirect()->back()->withErrors($request->all());
     }

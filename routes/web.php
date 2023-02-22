@@ -24,5 +24,19 @@ Route::get('/', function () {
     return view('index', ['regions' => $regions, 'pharmacies' => $pharmacies]);
 })->name('index');
 
+Route::get('/interest', function () {
+    $regions = Region::with('pharmacy')->get();
+    $pharmacies = Pharmacy::with('region')->get();
+
+    return view('pharmacy.interest', ['regions' => $regions, 'pharmacies' => $pharmacies]);
+})->name('interest');
+
+Route::get('/marketing', function () {
+    $regions = Region::with('pharmacy')->get();
+    $pharmacies = Pharmacy::with('region')->get();
+
+    return view('pharmacy.marketing', ['regions' => $regions, 'pharmacies' => $pharmacies]);
+})->name('marketing');
+
 Route::resource('post', PostController::class);
 Route::resource('pharmacy', PharmacyController::class);
