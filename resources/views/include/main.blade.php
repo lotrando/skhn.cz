@@ -129,7 +129,7 @@
       {{-- End Services Section --}}
 
       {{-- Departments Section --}}
-      <section class="faq section-bg" id="faq">
+      {{-- <section class="faq section-bg" id="faq">
         <div class="container">
 
           <div class="section-title">
@@ -164,7 +164,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> --}}
       {{-- End Departments Section --}}
 
       {{-- Frequently Asked Questions Section --}}

@@ -29,7 +29,7 @@
     </nav>
     {{-- end navbr --}}
 
-    <a class="appointment-btn scrollto text-uppercase" href="{{ route('index') }}#appointment">Stát se členem</a>
+    <a class="appointment-btn scrollto text-uppercase" href="{{ route('interest') }}">Stát se členem</a>
 
   </div>
 </header>
