@@ -2,7 +2,8 @@
 <header class="fixed-top" id="header">
   <div class="d-flex align-items-center container">
 
-    <a class="logo me-auto" href="{{ route('index') }}"><img class="img-fluid" src="{{ asset('/img/logo.png') }}" alt="Logo sdružení"></a>
+    <a class="logo me-auto" href="{{ route('index') }}"><img class="img-fluid" src="{{ asset('/img/logo.png') }}"
+        alt="Logo sdružení"></a>
 
     {{-- navbar --}}
     <nav class="navbar order-lg-0 order-last" id="navbar">
@@ -13,7 +14,8 @@
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('interest') }}">Pro zájemce</a></li>
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('marketing') }}">Marketing</a></li>
         <li><a class="nav-link scrollto text-uppercase" href="{{ route('index') }}#contact">Kontakt</a></li>
-        <li class="dropdown text-uppercase"><a href="#"><span>Lékárny</span> <i class="bi bi-chevron-down"></i></a>
+        <li class="dropdown text-uppercase"><a href="#"><span>Lékárny</span> <i
+              class="bi bi-chevron-down"></i></a>
           <ul>
             @foreach ($regions as $region)
               <li>
