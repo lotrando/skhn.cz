@@ -9,10 +9,12 @@
               <div class="content">
                 <h3 class="text-center">Proč se stát členem Sdružení Karvinské hornické nemocnice?</h3>
                 <p class="text-center">
-                  Bojíte se, že neudržíte otěže své lékárny pevně ve svých rukou. Přidejte se k nám a své obavy hoďte klidně za hlavu!
+                  Bojíte se, že neudržíte otěže své lékárny pevně ve svých rukou. Přidejte se k nám a své obavy hoďte
+                  klidně za hlavu!
                 </p>
                 <p class="text-center">
-                  Garantujeme vám zachování ekonomické a marketingové individuality vaší lékárny, protože ve vás věříme. Nabízíme vám výhodný program, který přispěje k
+                  Garantujeme vám zachování ekonomické a marketingové individuality vaší lékárny, protože ve vás věříme.
+                  Nabízíme vám výhodný program, který přispěje k
                   uspokojivému ekonomickému efektu v alianci.
                 </p>
                 <div class="text-center">
@@ -29,8 +31,10 @@
                     <div class="icon-box mt-xl-0 my-4">
                       <i class="bi bi-graph-up-arrow"></i>
                       <h4>Rozvoj</h4>
-                      <p>Jsme si vědomi, že právě vaši zaměstnanci, se svými znalostmi a dovednosti, jsou hlavním pilířem úspěchu vaší lékárny.</p>
-                      <p>Investice do jejich vzdělávání a rozvoje jsou proto důležitým faktorem úspěchu. Poradíme vám jak na osobnostní rozvoj, komunikační dovednosti,
+                      <p>Jsme si vědomi, že právě vaši zaměstnanci, se svými znalostmi a dovednostmi, jsou hlavním
+                        pilířem úspěchu vaší lékárny.</p>
+                      <p>Investice do jejich vzdělávání a rozvoje jsou proto důležitým faktorem úspěchu. Poradíme vám
+                        jak na osobnostní rozvoj, komunikační dovednosti,
                         marketingovou komunikaci či řízení lékárny.</p>
                     </div>
                   </div>
@@ -38,16 +42,18 @@
                     <div class="icon-box mt-xl-0 my-4">
                       <i class="bi bi-house-check"></i>
                       <h4>Samostatnost</h4>
-                      <p>Víme také, že kvůli výrazně menšímu obratu nakupují malé a střední lékárny od svých dodavatelů za méně výhodné ceny než celostátní giganti s velkým
-                        obratem.</p>
+                      <p>Pomůžeme vám s preferencí akčních produktů při výdeji i s podporou prodeje. Společně najdeme
+                        vhodný prostor pro vystavení vybraných produktů.</p>
+                      <p>Naučíme vás, jak získávat relevantní data o prodejích a skladových zásobách lékárny a jak s
+                        nimi pracovat. Poradíme vám s vizuální identitou vaší lékárny.</p>
                     </div>
                   </div>
                   <div class="col-xl-4 d-flex align-items-stretch">
                     <div class="icon-box mt-xl-0 my-4">
                       <i class="bi bi-bag-heart"></i>
                       <h4>Podpora</h4>
-                      <p>Poskytneme vám plnohodnotnou marketingovou podporu. Nastavíme vám systém dlouhodobého formování a podpory vztahu s potenciálním zákazníkem pomocí obsahu,
-                        který pomáhá, vzdělává a baví.</p>
+                      <p>Poskytneme vám plnohodnotnou marketingovou podporu. Nastavíme vám systém dlouhodobého formování
+                        a podpory vztahu s potenciálním zákazníkem pomocí obsahu, který pomáhá, vzdělává a baví.</p>
                     </div>
                   </div>
                 </div>
@@ -69,7 +75,8 @@
             <div class="col-lg-12 col-md-12 mt-md-0 mt-5">
               <div class="count-box">
                 <i class="fas fa-hospital"></i>
-                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="{{ $pharmacies->count() }}" data-purecounter-duration="1"></span>
+                <span class="purecounter" data-purecounter-start="0" data-purecounter-end="{{ $pharmacies->count() }}"
+                  data-purecounter-duration="1"></span>
                 <p>Lékaren ve sdružení</p>
               </div>
             </div>
@@ -101,24 +108,28 @@
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch rounded-1">
               <div class="icon-box">
                 <div class="icon"><i class="fas fa-heartbeat"></i></div>
-                <p>Díky bohatým zkušenostem z farmaceutického průmyslu víme, že konkurovat velkým lékárenským řetězcům je pro malé a střední lékárny značně obtížné. Nemohou se s
-                  nimi měřit v oblasti bonusů za prodej a vystavení, ani v oblasti propagace a distribuce, kde velké řetězce získávají značný náskok v boji o zákazníky. </p>
+                <p>Díky bohatým zkušenostem z farmaceutického průmyslu víme, že konkurovat velkým lékárenským řetězcům
+                  je pro malé a střední lékárny značně obtížné. Nemohou se s
+                  nimi měřit v oblasti bonusů za prodej a vystavení, ani v oblasti propagace a distribuce, kde velké
+                  řetězce získávají značný náskok v boji o zákazníky. </p>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-md-0 mt-4">
               <div class="icon-box">
                 <div class="icon"><i class="fas fa-pills"></i></div>
-                <p>Víme také, že kvůli výrazně menšímu obratu nakupují malé a střední lékárny od svých dodavatelů za méně výhodné ceny než celostátní giganti s velkým obratem.</p>
+                <p>Víme také, že kvůli výrazně menšímu obratu nakupují malé a střední lékárny od svých dodavatelů za
+                  méně výhodné ceny než celostátní giganti s velkým obratem.</p>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-lg-0 mt-4">
               <div class="icon-box">
                 <div class="icon"><i class="fas fa-hospital-user"></i></div>
-                <p>Poznáváte se v některé z uvedených situací? Pak právě vám nabízíme řešení, jak zlikvidovat tyto konkurenční nevýhody! Díky koordinovanému postupu, který vám
-                  Sdružení Karvinské hornické nemocnice a.s. (SKHN) nabízí, získáte až stoprocentní bonusový nárůst. To vám garantujeme, protože jsme orientováni na obchodní
-                  výsledek svých klientů.</p>
+                <p>Poznáváte se v některé z uvedených situací? Pak právě vám nabízíme řešení, jak zlikvidovat tyto
+                  konkurenční nevýhody! Díky koordinovanému postupu, který vám Sdružení Karvinské hornické nemocnice
+                  (SKHN) nabízí, získáte až stoprocentní bonusový nárůst. To vám garantujeme, protože jsme orientováni
+                  na obchodní výsledek svých klientů.</p>
               </div>
             </div>
 
@@ -142,7 +153,8 @@
                 <ul>
                   @foreach ($regions as $region)
                     <li data-aos="fade-up">
-                      <a data-bs-toggle="collapse" data-bs-target="#faq-list-{{ $region->id }}">{{ $region->region_name }}
+                      <a data-bs-toggle="collapse"
+                        data-bs-target="#faq-list-{{ $region->id }}">{{ $region->region_name }}
                         <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                       <div class="collapse mt-1 px-2" id="faq-list-{{ $region->id }}" data-bs-parent=".faq-list">
                         <ul>
@@ -152,7 +164,8 @@
                               <span class="text-bolder">{{ $pharmacy->name }}</span>
                             </p>
                             <p>
-                              <span class="text-muted">{{ $pharmacy->address }}, {{ $pharmacy->zip }}, {{ $pharmacy->village }}</span>
+                              <span class="text-muted">{{ $pharmacy->address }}, {{ $pharmacy->zip }},
+                                {{ $pharmacy->village }}</span>
                             </p>
                           @endforeach
                         </ul>
@@ -228,8 +241,10 @@
         </div>
 
         <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.6174619330404!2d18.5380256280902!3d49.86843006173945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x47115522e5e2d2ff%3A0x25acc335a378eb9f!2zS2Fydmluc2vDoSBob3JuaWNrw6EgbmVtb2NuaWNlIC0gbMOpa8Ohcm5h!5e0!3m2!1scs!2scz!4v1675667504134!5m2!1scs!2scz"
-                  style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.6174619330404!2d18.5380256280902!3d49.86843006173945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x47115522e5e2d2ff%3A0x25acc335a378eb9f!2zS2Fydmluc2vDoSBob3JuaWNrw6EgbmVtb2NuaWNlIC0gbMOpa8Ohcm5h!5e0!3m2!1scs!2scz!4v1675667504134!5m2!1scs!2scz"
+            style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="container">
@@ -241,8 +256,8 @@
                   <i class="bi bi-geo-alt"></i>
                   <h4>Kde nás najdete:</h4>
                   <p>Zakladatelská 975/22
-                    <br>735 06
                     <br>Karviná-Nové Město
+                    <br>735 06
                   </p>
                 </div>
 
