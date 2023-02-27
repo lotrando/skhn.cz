@@ -3,14 +3,8 @@
 @section('content')
   <main id="main">
     {{-- Departments Section --}}
-<<<<<<< HEAD
-    <section class="faq section-bg mt-6" id="faq">
-      <div class="container mt-6">
-=======
-    <section class="marketing section-bg mt-5" id="marketing">
+    <section class="faq section-bg mt-5" id="marketing">
       <div class="container mt-5">
->>>>>>> a711c336bf22ac0205c1f427cc33a862c20f6d41
-
         <div class="section-title">
           <h1>-</h1><br>
           <h2>Marketing</h2>
