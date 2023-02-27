@@ -31,12 +31,8 @@
                     <div class="icon-box mt-xl-0 my-4">
                       <i class="bi bi-graph-up-arrow"></i>
                       <h4>Rozvoj</h4>
-<<<<<<< HEAD
-                      <p>Jsme si vědomi, že právě vaši zaměstnanci, se svými znalostmi a dovednostmi, jsou hlavním
-=======
-                      <p>Jsme si vědomi, že právě vaši zaměstnanci, se svými znalostmi a dovednosti, jsou hlavním
->>>>>>> a711c336bf22ac0205c1f427cc33a862c20f6d41
-                        pilířem úspěchu vaší lékárny.</p>
+                      <p>Jsme si vědomi, že právě vaši zaměstnanci, se svými znalostmi a dovednostmi, jsou
+                        hlavním pilířem úspěchu vaší lékárny.</p>
                       <p>Investice do jejich vzdělávání a rozvoje jsou proto důležitým faktorem úspěchu. Poradíme vám
                         jak na osobnostní rozvoj, komunikační dovednosti,
                         marketingovou komunikaci či řízení lékárny.</p>
@@ -46,16 +42,10 @@
                     <div class="icon-box mt-xl-0 my-4">
                       <i class="bi bi-house-check"></i>
                       <h4>Samostatnost</h4>
-<<<<<<< HEAD
                       <p>Pomůžeme vám s preferencí akčních produktů při výdeji i s podporou prodeje. Společně najdeme
                         vhodný prostor pro vystavení vybraných produktů.</p>
                       <p>Naučíme vás, jak získávat relevantní data o prodejích a skladových zásobách lékárny a jak s
                         nimi pracovat. Poradíme vám s vizuální identitou vaší lékárny.</p>
-=======
-                      <p>Víme také, že kvůli výrazně menšímu obratu nakupují malé a střední lékárny od svých dodavatelů
-                        za méně výhodné ceny než celostátní giganti s velkým
-                        obratem.</p>
->>>>>>> a711c336bf22ac0205c1f427cc33a862c20f6d41
                     </div>
                   </div>
                   <div class="col-xl-4 d-flex align-items-stretch">
@@ -63,12 +53,8 @@
                       <i class="bi bi-bag-heart"></i>
                       <h4>Podpora</h4>
                       <p>Poskytneme vám plnohodnotnou marketingovou podporu. Nastavíme vám systém dlouhodobého formování
-<<<<<<< HEAD
-                        a podpory vztahu s potenciálním zákazníkem pomocí obsahu, který pomáhá, vzdělává a baví.</p>
-=======
-                        a podpory vztahu s potenciálním zákazníkem pomocí obsahu,
-                        který pomáhá, vzdělává a baví.</p>
->>>>>>> a711c336bf22ac0205c1f427cc33a862c20f6d41
+                        a podpory vztahu s potenciálním zákazníkem pomocí obsahu, který pomáhá, vzdělává a baví.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -142,16 +128,11 @@
               <div class="icon-box">
                 <div class="icon"><i class="fas fa-hospital-user"></i></div>
                 <p>Poznáváte se v některé z uvedených situací? Pak právě vám nabízíme řešení, jak zlikvidovat tyto
-<<<<<<< HEAD
-                  konkurenční nevýhody! Díky koordinovanému postupu, který vám Sdružení Karvinské hornické nemocnice
-                  (SKHN) nabízí, získáte až stoprocentní bonusový nárůst. To vám garantujeme, protože jsme orientováni
-                  na obchodní výsledek svých klientů.</p>
-=======
-                  konkurenční nevýhody! Díky koordinovanému postupu, který vám
-                  Sdružení Karvinské hornické nemocnice a.s. (SKHN) nabízí, získáte až stoprocentní bonusový nárůst. To
-                  vám garantujeme, protože jsme orientováni na obchodní
-                  výsledek svých klientů.</p>
->>>>>>> a711c336bf22ac0205c1f427cc33a862c20f6d41
+                  konkurenční nevýhody! Díky koordinovanému postupu, který vám Sdružení Karvinské hornické
+                  nemocnice (SKHN) nabízí, získáte až stoprocentní bonusový nárůst. To vám garantujeme, protože jsme
+                  orientováni na obchodní výsledek svých klientů.
+                </p>
+                </p>
               </div>
             </div>
 
