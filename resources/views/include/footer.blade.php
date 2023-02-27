@@ -11,7 +11,8 @@
               Zakladatelská 975/22<br>
               Karviná - Nové Město<br>
               Česká republika<br>
-              735 06<br><br>
+              735 06<br>
+              Česká republika<br><br>
               <strong>Tel:</strong><a href="tel:+420 596 380 602">+420 596 380 602</a><br>
               <strong>Mob:</strong><a href="tel:+420 734 792 882">+420 734 792 882</a><br>
               <strong>Email:</strong><a href="mailto:reznikova@khn.cz">reznikova@khn.cz</a><br>
