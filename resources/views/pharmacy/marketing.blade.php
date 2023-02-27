@@ -6,7 +6,6 @@
     <section class="faq section-bg mt-5" id="marketing">
       <div class="container mt-5">
         <div class="section-title">
-          <h1>-</h1><br>
           <h2>Marketing</h2>
           <p>Marketingové služby<br>Sdružení Karvinské hornické nemocnice</p>
         </div>
