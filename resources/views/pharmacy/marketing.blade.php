@@ -28,7 +28,7 @@
                 <hr>
                 <li data-aos="fade-up">
                   <a class="text-center" href="skhn-1-2023.pdf" target="_blank">
-                    Akční leták<br>Sdružení Karvinské hornické nemocnice
+                    Vzorový akční leták
                   </a>
                 </li>
               </ul>
